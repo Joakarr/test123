@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: rgba(0, 119, 255, 0.027);
+    height: 70px;
+    border: 1px solid rgb(199, 199, 199) ;
+    border-radius: 15px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.header-menu{
+    display: flex;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.header-logo-image {
+    height: 30px;
+    margin-top: 5px;
+}
+
+.header-nav-item{
+    margin-right: 15px;
+}
+
+.header-nav-item:hover{
+    color: bisque;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+.header-nav {
+    margin-top: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.main-block {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid rgb(199, 199, 199) ;
+    border-radius: 15px;
+    height: 120px;
+    background-color: rgba(0, 119, 255, 0.027);
+}
+
+.main-block-nav{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.main-item:hover {
+    color: bisque;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+.stats-block {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid rgb(199, 199, 199) ;
+    border-radius: 15px;
+    background-color: rgba(0, 119, 255, 0.027);
+}
+
+.stats-block-nav {
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+.time-select-button {
+    color: white;
+}
+
+.time-select-button:hover {
+    color: bisque;
+    transition: 0.2s;
+    box-sizing: border-box;
+
+}
+
+.stats{
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    background-color: rgba(0, 119, 255, 0.027);
+}
+
+.stats-item {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 15px;
+    margin-top: 150px;
+    height: 50px;
+    background-color: rgba(0, 119, 255, 0.027);
+}
+
+.footer-menu{
+    display: flex;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-nav-item{
+    margin-right: 15px;
+}
+
+.footer-nav-item:hover{
+    color: bisque;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+.fame-tracker-block{
+    display: flex;
+    margin-top: 150px;
+    border: 1px solid rgb(199, 199, 199) ;
+    border-radius: 15px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.027);
+}
+
+.about-fame {
+    color: #acacac;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.graph {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.graph-info {
+    background-color: #ffffff;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студия</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/jsapi"></script>
+  <script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+     ['Прослушивания', 'Количество'],
+     ['VK музыка',     78.09],
+     ['iTunes', 20.95],
+     ['Spotify',    10.5],
+    ]);
+    var options = {
+
+     title: 'Источники',
+     is3D: false,
+     pieResidueSliceLabel: 'Остальное'
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('air'));
+     chart.draw(data, options);
+   }
+  </script>
+</head>
+<header>
+
+    <div class="header-menu">
+    <div class="header-logo">
+        <img class="header-logo-image" src="vk-black.svg" alt="">
+    </div>
+    <div class="header-nav">
+        <a class="header-nav-item" href="#">Главная</a>
+        <a class="header-nav-item" href="#">Музыка</a>
+        <a class="header-nav-item" href="#">Аудитория</a>
+        <a class="header-nav-item" href="#">Настройки</a>
+    </div>
+    </div> 
+
+</header>
+<body>
+
+    <div class="main-block">
+        <div class="main-block-nav">
+            <a class="main-item" href="#">Обзор</a>
+            <a class="main-item" href="#">Полезные материалы</a>
+        </div>
+    </div>
+    
+    <div class="stats-block">
+        <div class="stats-block-nav">
+            <a class="time-select-button" href="#">Выбрать период</a>
+        </div>
+        <div class="stats">
+            <div class="stats-item">
+                <p>Сейчас слушают</p>
+                <div class="count">208🠕</div>
+            </div>
+
+            <div class="stats-item">
+                <p>Добавили к себе</p>
+                <div class="count">341🠗</div>
+            </div>
+
+            <div class="stats-item">
+                <p>Поделились</p>
+                <div class="count">652🠕</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fame-tracker-block">
+        <div class="graph">
+            <div class="graph-info" id="air" style="color: white; background-color: black; width: 900px; height: 400px;"></div>
+        </div>
+        <div class="about-fame">
+            * - данные приведены по статистике собранной United Media Agency
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-menu">
+            <div class="footer-logo">
+                <img class="footer-logo-image" src="vk-black.svg" alt="">
+            </div>
+            <div class="footer-nav">
+                <a class="footer-nav-item" href="#">О нас</a>
+                <a class="footer-nav-item" href="#">Поддержка</a>
+                <a class="footer-nav-item" href="#">Контакты</a>
+            </div>
+            </div> 
+    </footer>
+</body>
+
+
+</html>
